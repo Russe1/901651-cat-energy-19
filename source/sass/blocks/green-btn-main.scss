@@ -1,0 +1,22 @@
+.green-btn-main {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+@media (min-width: $tablet-width) {
+  .green-btn-main {
+    display: block;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #68b738;
+  }
+}

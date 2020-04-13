@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -33,7 +34,7 @@
         </p>
 
         <fieldset class="form__cat cat">
-          <caption>Данные вашего кота</caption>
+          <legend>Данные вашего кота</legend>
           <label class="cat__data">Имя:<sup>*</sup>
             <input class="cat__input" type="text" name="cat-name" required placeholder="Барсик">
           </label>
@@ -48,7 +49,7 @@
         </fieldset>
 
         <fieldset class="form__programs indicate-program">
-          <caption>Укажите программу</caption>
+          <legend>Укажите программу</legend>
           <label class="indicate-program__item">
             <input class="indicate-program__input" type="radio" name="program" value="weight-loss" checked>
             <span class="indicate-program__decor"></span>
@@ -69,7 +70,7 @@
         </fieldset>
 
         <fieldset class="form__owner owner">
-          <caption class="owner__title">Контактные данные (владельца кота)</caption>
+          <legend class="owner__title">Контактные данные (владельца кота)</legend>
 
           <label class="owner__contacts">E-mail:<sup>*</sup>
             <input class="owner__input" type="email" name="email" required placeholder="kuklachev@gmail.com">
@@ -81,14 +82,14 @@
         </fieldset>
 
         <fieldset class="form__comment comment">
-          <caption class="comment__title">Комментарий</caption>
+          <legend class="comment__title">Комментарий</legend>
           <textarea class="comment__text" placeholder="Расскажите обо всех повадках кота" cols="35" rows="8">
             Расскажите обо всех повадках кота
           </textarea>
         </fieldset>
 
         <fieldset class="form__additionally additionally">
-          <caption class="additionally__title">Дополнительно</caption>
+          <legend class="additionally__title">Дополнительно</legend>
 
           <label class="additionally__item">
             <input class="additionally__input"  type="checkbox" name="sweetener" checked>

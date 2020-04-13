@@ -37,7 +37,6 @@ body {
   background: white;
 }
 
-
 @import "blocks/variables.scss";
 @import "blocks/header.scss";
 @import "blocks/navigation-list.scss";
@@ -59,8 +58,6 @@ body {
 @import "blocks/socials-list.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/copyright.scss";
-
-
 
 @media (min-width: $tablet-width) {
   body {

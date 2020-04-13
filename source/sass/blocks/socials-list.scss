@@ -7,7 +7,9 @@
 
 .socials-list__icon {
   display: block;
-  path, circle {
+
+  path,
+  circle {
     fill: #666666;
   }
 }
@@ -16,10 +18,12 @@
   padding: 0;
   margin: 0;
   margin-right: 30px;
+
   &:first-child {
     margin-left: -11px;
     margin-right: 27px;
   }
+
   &:last-child {
     margin-right: 0;
   }
@@ -35,10 +39,12 @@
     padding: 0;
     margin: 0;
     margin-right: 30px;
+
     &:first-child {
       margin-left: 0;
       margin-right: 27px;
     }
+
     &:last-child {
       margin-right: 0;
     }

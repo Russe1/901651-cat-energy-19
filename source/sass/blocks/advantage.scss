@@ -30,13 +30,14 @@
     width: 245px;
     height: 228px;
     align-items: flex-start;
+
     &::after {
       position: absolute;
       top: -4px;
       right: 0;
       counter-increment: li;
       content: counter(li) "";
-      font-family: "Oswald";
+      font-family: "Oswald", sans-serif;
       font-weight: 400;
       font-size: 281px;
       line-height: 0.75;

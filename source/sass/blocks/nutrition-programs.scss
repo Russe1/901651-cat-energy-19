@@ -1,0 +1,14 @@
+.nutrition-programs {
+  background-color: #ffffff;
+}
+
+.nutrition-programs__list {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition-programs__list {
+    padding: 0 30px;
+  }
+}

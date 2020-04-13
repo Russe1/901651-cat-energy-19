@@ -1,0 +1,45 @@
+.programs-description {
+  background-color: #ffffff;
+}
+
+.programs-description__inner {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.programs-description__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  padding-bottom: 22px;
+}
+
+.programs-description__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs-description {
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .programs-description__inner {
+    padding: 0 30px;
+  }
+
+  .programs-description__title {
+    font-size: 60px;
+    margin-top: 45px;
+  }
+
+  .programs-description__list {
+    margin-top: 72px;
+    padding-bottom: 58px;
+  }
+}

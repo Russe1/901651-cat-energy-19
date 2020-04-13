@@ -1,0 +1,16 @@
+.image-block {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.image-block__img {
+  display: block;
+}
+
+.image-block__img--weigth-loss {
+  margin-left: 8px;
+  margin-top: -3px;
+}

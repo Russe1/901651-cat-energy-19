@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+  margin: 0 auto;
+  background: white;
+}
+
+@import "blocks/variables.scss";
+@import "blocks/header.scss";
+@import "blocks/navigation-list.scss";
+@import "blocks/intro.scss";
+@import "blocks/green-btn.scss";
+@import "blocks/green-btn-main.scss";
+@import "blocks/programs-list.scss";
+@import "blocks/nutrition-programs.scss";
+@import "blocks/program.scss";
+@import "blocks/image-block.scss";
+@import "blocks/programs-description.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/advantage.scss";
+@import "blocks/living-example.scss";
+@import "blocks/data.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials-list.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/copyright.scss";
+
+@media (min-width: $tablet-width) {
+  body {
+    width: $tablet-width;
+  }
+}

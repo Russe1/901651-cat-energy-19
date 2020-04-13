@@ -1,0 +1,91 @@
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.data__legend {
+  position: absolute;
+  bottom: -16px;
+  left: 17px;
+  width: 86px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #444444;
+  padding: 0 5px;
+  background-color: #f2f2f2;
+}
+
+.data__value {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.living-example__expenses {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 10px;
+  margin-top: 34px;
+  margin-bottom: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .data {
+    display: inline-flex;
+    width: 366px;
+  }
+
+  .data__block {
+    width: 162px;
+    height: 72px;
+  }
+
+  .data__legend {
+    position: absolute;
+    bottom: -7px;
+    width: auto;
+    font-size: 14px;
+    background-color: #ffffff;
+  }
+
+  .data__legend--first {
+    left: 26px;
+  }
+
+  .data__legend--second {
+    left: 13px;
+  }
+
+  .data__value {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .living-example__expenses {
+    display: inline-block;
+    width: 175px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    text-align: right;
+  }
+}

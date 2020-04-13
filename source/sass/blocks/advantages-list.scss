@@ -1,0 +1,29 @@
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-list__item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: li;
+  }
+
+  .advantages-list__item {
+    margin: 0;
+
+    &:nth-child(n+3) {
+      margin-top: 89px;
+    }
+
+    &:nth-child(2n-1) {
+      margin-right: 139px;
+    }
+  }
+}

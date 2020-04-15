@@ -8,9 +8,36 @@
 
 .image-block__img {
   display: block;
+  max-width: none;
 }
 
 .image-block__img--weigth-loss {
   margin-left: 8px;
   margin-top: -3px;
+}
+
+.image-block__img--weigth-gain {
+  margin-left: -9px;
+  margin-top: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .image-block {
+    width: 200px;
+    height: 200px;
+  }
+
+  .image-block__img--weigth-loss {
+    width: 140px;
+    height: 194px;
+    margin-left: 30px;
+    margin-top: -12px;
+  }
+
+  .image-block__img--weigth-gain {
+    width: 268px;
+    height: 112px;
+    margin-left: -36px;
+    margin-top: 44px;
+  }
 }

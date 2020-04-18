@@ -2,12 +2,16 @@
   background-color: #f2f2f2;
 }
 
+.slider__image--after {
+  display: none;
+}
+
 .slider__toggles-block {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 27px;
 }
 
 .slider__button {
@@ -18,6 +22,7 @@
   color: #111111;
   text-transform: uppercase;
   border: none;
+  background-color: transparent;
 }
 
 .slider__switch {
@@ -29,7 +34,7 @@
   margin: 0 18px;
   padding: 0 6px;
   border: 1px solid #cdcdcd;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .slider__toggle {
@@ -93,6 +98,5 @@
     font-size: 20px;
 
     border-bottom: 1px dotted #bebebe;
-    background-color: transparent;
   }
 }

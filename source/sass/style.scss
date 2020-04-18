@@ -37,6 +37,11 @@ body {
   background: white;
 }
 
+iframe {
+  display: block;
+  width: 100%;
+}
+
 @import "blocks/variables.scss";
 @import "blocks/header.scss";
 @import "blocks/navigation-list.scss";
@@ -63,6 +68,12 @@ body {
   body {
     width: $tablet-width;
   }
+
+  iframe {
+    width: 768px;
+    height: 397px;
+  }
 }
 
 /* это для бонусного задания */
+

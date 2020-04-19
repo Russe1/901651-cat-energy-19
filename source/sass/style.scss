@@ -75,5 +75,12 @@ iframe {
   }
 }
 
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 100%;
+    max-width: 1440px;
+  }
+}
+
 /* это для бонусного задания */
 

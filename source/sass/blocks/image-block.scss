@@ -41,3 +41,26 @@
     margin-top: 44px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .image-block {
+    width: 100px;
+    height: 100px;
+  }
+
+  .image-block__img--weigth-loss {
+    width: 70px;
+    height: 97px;
+    margin-left: 14px;
+    margin-top: -6px;
+  }
+
+  .image-block__img--weigth-gain {
+    width: 134px;
+    height: 56px;
+    margin-left: -18px;
+    margin-top: 22px;
+  }
+
+
+}

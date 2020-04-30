@@ -12,3 +12,9 @@
     padding: 0 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nutrition-programs__list {
+    padding: 80px 40px 73px 40px;
+  }
+}

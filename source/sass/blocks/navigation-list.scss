@@ -64,5 +64,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .navigation-list {
+    font-size: 20px;
+    font-weight: 400;
+  }
 
+  .navigation-list__link {
+    color: #ffffff;
+  }
+
+  .navigation-list__link--active {
+
+    &::before {
+      bottom: -14px;
+      background-color: #ffffff;
+    }
+  }
 }

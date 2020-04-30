@@ -43,3 +43,21 @@
     padding-bottom: 58px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs-description {
+    border-bottom: none;
+  }
+
+  .programs-description__inner {
+    padding: 0 40px;
+  }
+
+  .programs-description__title {
+    margin-top: 0;
+  }
+
+  .programs-description__list {
+    padding-bottom: 0;
+  }
+}

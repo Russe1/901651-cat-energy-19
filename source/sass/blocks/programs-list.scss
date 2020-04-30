@@ -18,3 +18,16 @@
     padding: 76px 0 58px 53px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .programs-list__item {
+    margin: 0;
+    padding: 76px 53px 58px 52px;
+  }
+}

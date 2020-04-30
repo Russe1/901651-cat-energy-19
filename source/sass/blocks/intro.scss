@@ -144,7 +144,7 @@
                       linear-gradient(to right, #65a93c);
     background-repeat: no-repeat;
     background-position-x: 100%;
-    background-size: 50% auto;
+    background-size: 50% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/index-background-desktop@2x.jpg");
@@ -161,16 +161,38 @@
   .intro__description {
     margin: 0;
     padding: 0;
-    padding-top: 150px;
+    padding-top: 222px;
     min-height: auto;
     background-color: transparent;
+  }
+
+  .intro__inner {
+    position: static;
   }
 
   .intro__image {
     margin: 0;
     padding: 0;
     position: absolute;
+    top: 142px;
+    left: 37.5%;
     width: 552px;
     height: 499px;
+  }
+
+  .intro__title {
+    margin-left: 120px;
+    width: 40%;
+  }
+
+  .intro__slogan {
+    margin-left: 120px;
+    margin-top: 37px;
+  }
+
+  .intro__link {
+    top: 456px;
+    left: 120px;
+
   }
 }

@@ -68,11 +68,6 @@ iframe {
   body {
     width: $tablet-width;
   }
-
-  iframe {
-    width: 768px;
-    height: 397px;
-  }
 }
 
 @media (min-width: $desktop-width) {

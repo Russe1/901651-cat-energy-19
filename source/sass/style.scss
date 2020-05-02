@@ -64,6 +64,14 @@ iframe {
 @import "blocks/visually-hidden.scss";
 @import "blocks/copyright.scss";
 
+@import "blocks/catalog.scss";
+@import "blocks/food-list.scss";
+@import "blocks/nutrition.scss";
+@import "blocks/nutrion-characteristics.scss";
+@import "blocks/show-more.scss";
+@import "blocks/gray-btn.scss";
+
+
 @media (min-width: $tablet-width) {
   body {
     width: $tablet-width;

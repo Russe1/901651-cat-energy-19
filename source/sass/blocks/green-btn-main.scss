@@ -6,6 +6,14 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  }
 }
 
 @media (min-width: $tablet-width) {

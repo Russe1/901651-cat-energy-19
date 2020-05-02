@@ -24,5 +24,18 @@
   .copyright__autor {
     margin-top: 0;
     margin-right: 23px;
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .copyright__logo {
+    &:hover {
+    color: #68b738;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

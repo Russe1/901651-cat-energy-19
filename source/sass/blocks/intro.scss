@@ -15,6 +15,7 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #64a83b;
+  background-position: center;
 }
 
 .intro__title {
@@ -110,30 +111,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  /* .intro {
-    display: flex;
-    min-height: 696px;
-  }
-
-  .intro__description {
-    width: 50%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .intro__inner {
-    padding: 0;
-    margin: 0;
-    width: 50%;
-    background-color: #64a83b;
-  }
-
-  .intro__image {
-    position: absolute;
-    width: 552px;
-    height: 499px;
-  } */
-
   .intro {
     position: relative;
     width: 100%;
@@ -155,7 +132,6 @@
     width: $desktop-width;
     margin: 0 auto;
     padding: 0;
-    outline: 1px solid red;
   }
 
   .intro__description {

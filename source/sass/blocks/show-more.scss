@@ -44,3 +44,36 @@
   padding-top: 12px;
   margin-top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    width: 324px;
+    border: 1px solid #e6e6e6;
+    padding: 0 38px;
+    padding-bottom: 40px;
+  }
+
+  .show-more__link {
+    font-size: 20px;
+    margin-top: 55px;
+    padding: 0 50px;
+    padding-top: 107px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      left: calc(50% - 30px);
+    }
+  }
+
+  .show-more__legend {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 25px;
+    padding: 0 30px;
+  }
+
+  .show-more__link-all {
+    margin-top: auto;
+  }
+}

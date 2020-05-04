@@ -28,3 +28,33 @@
   margin: 0;
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+  .nutrion-characteristics {
+    font-size: 16px;
+  }
+
+  .nutrion-characteristics__title {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 50px;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+
+  .nutrion-characteristics tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .nutrion-characteristics__mark {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .nutrion-characteristics__value {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+
+}

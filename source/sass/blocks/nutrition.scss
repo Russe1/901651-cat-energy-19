@@ -23,3 +23,35 @@
   font-weight: 400;
   padding-top: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .nutrition {
+    justify-content: center;
+    width: 324px;
+    background-color: #f2f2f2;
+  }
+
+  .nutrition__image {
+    display: inline-block;
+    max-width: none;
+    width: 324px;
+  }
+
+  .nutrition:nth-child(2n+1) .nutrition__image {
+    height: 171px;
+    margin-top: -46px;
+  }
+
+  .nutrition:nth-child(2n) .nutrition__image {
+    height: 208px;
+    margin-top: -82px;
+  }
+
+  .nutrition__description {
+    margin-top: 35px;
+  }
+
+  .nutrition__to-buy {
+    margin-top: 34px;
+  }
+}

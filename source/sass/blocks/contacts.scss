@@ -12,6 +12,10 @@
   padding-bottom: 24px;
 }
 
+.contacts__top--gray-back {
+  background-color: #f2f2f2;
+}
+
 .contacts__promo {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -36,7 +40,7 @@
 .contacts__map {
   display: block;
   width: 100%;
-  height: 400px;
+  height: 363px;
 }
 
 .footer__socials {
@@ -69,6 +73,10 @@
   .contacts__word-br {
     display: inline-block;
     padding-top: 20px;
+  }
+
+  .contacts__map {
+    height: 400px;
   }
 }
 

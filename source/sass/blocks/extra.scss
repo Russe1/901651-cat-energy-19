@@ -1,0 +1,19 @@
+.extra {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.extra__description {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.extra__to-buy {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  padding-top: 12px;
+}

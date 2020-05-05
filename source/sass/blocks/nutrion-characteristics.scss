@@ -55,6 +55,11 @@
     padding-top: 8px;
     padding-bottom: 7px;
   }
+}
 
-
+@media (min-width: $desktop-width) {
+  .nutrion-characteristics__title {
+    padding: 0 10px;
+    padding-bottom: 18px;
+  }
 }

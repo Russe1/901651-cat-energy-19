@@ -32,3 +32,48 @@
   margin: 0;
   padding: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .additional-goods {
+
+    &::before {
+      top: 87px;
+
+    }
+  }
+
+  .additional-goods__title {
+    font-size: 36px;
+    margin: 0;
+    margin-left: 28px;
+    padding: 65px 36px 80px 39px;
+  }
+
+  .additional-goods__list {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    &::before {
+      top: 97px;
+
+    }
+  }
+
+  .additional-goods__title {
+    margin: 0;
+    padding: 75px 36px 80px 39px;
+  }
+
+  .additional-goods__wrapper {
+    display: flex;
+    padding-bottom: 85px;
+  }
+
+  .additional-goods__list {
+    flex-grow: 1;
+    padding: 0 40px;
+  }
+}

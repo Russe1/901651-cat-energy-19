@@ -1,0 +1,11 @@
+.link-color-black {
+  color: #111111;
+}
+
+.link-color-black--active {
+
+  &::before {
+    bottom: -14px;
+    background-color: #68b738;
+  }
+}

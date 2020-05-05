@@ -17,3 +17,31 @@
   font-weight: 400;
   padding-top: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .extra__description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-grow: 0;
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .extra__description {
+    min-width: 650px;
+    margin-bottom: 0;
+  }
+
+  .extra__to-buy {
+    flex-grow: 1;
+  }
+}

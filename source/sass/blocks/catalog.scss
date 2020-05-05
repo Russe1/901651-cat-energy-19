@@ -38,3 +38,24 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 100%;
+    padding-top: 113px;
+  }
+
+  .catalog__title {
+    padding: 0 40px;
+    padding-top: 75px;
+    padding-bottom: 164px;
+  }
+
+  .catalog__list {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

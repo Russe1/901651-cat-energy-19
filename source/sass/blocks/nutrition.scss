@@ -27,7 +27,6 @@
 @media (min-width: $tablet-width) {
   .nutrition {
     justify-content: center;
-    width: 324px;
     background-color: #f2f2f2;
   }
 
@@ -53,5 +52,13 @@
 
   .nutrition__to-buy {
     margin-top: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__image {
+    display: inline-block;
+    max-width: none;
+    width: 245px;
   }
 }

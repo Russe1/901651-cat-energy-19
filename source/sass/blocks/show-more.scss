@@ -4,7 +4,6 @@
   align-items: center;
   text-align: center;
   padding-top: 27px;
-  padding-bottom: 25px;
 }
 
 .show-more__link {
@@ -47,7 +46,6 @@
 
 @media (min-width: $tablet-width) {
   .show-more {
-    width: 324px;
     border: 1px solid #e6e6e6;
     padding: 0 38px;
     padding-bottom: 40px;
@@ -75,5 +73,17 @@
 
   .show-more__link-all {
     margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__link {
+    padding: 0 5px;
+    padding-top: 107px;
+  }
+
+  .show-more__legend {
+    margin-top: 27px;
+    padding: 0;
   }
 }

@@ -8,3 +8,15 @@
   padding: 0;
   background-color: #74b84b;
 }
+
+@media (min-width: $tablet-width) {
+  .stocks-and-sales {
+    padding: 69px 30px 76px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stocks-and-sales {
+    padding: 0 40px;
+  }
+}

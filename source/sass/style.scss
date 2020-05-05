@@ -76,6 +76,7 @@ iframe {
 @import "blocks/extra-characteristics.scss";
 @import "blocks/stocks-and-sales.scss";
 @import "blocks/gift.scss";
+@import "blocks/link-color-black.scss";
 
 
 @media (min-width: $tablet-width) {
@@ -86,7 +87,7 @@ iframe {
 
 @media (min-width: $desktop-width) {
   body {
-    min-width: 100%;
+    width: 100%;
     max-width: 1440px;
   }
 }

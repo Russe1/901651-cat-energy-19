@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .socials-list__icon {
@@ -40,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .socials-list {
-    padding-left: 17px;
+    padding-right: 14px;
   }
 
   .socials-list__item {

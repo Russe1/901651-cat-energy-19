@@ -8,6 +8,8 @@
   padding: 0;
   flex-grow: 1;
   margin-bottom: 15px;
+  outline: 1px solid red;
+  width: 100%;
 }
 
 .extra__to-buy {
@@ -27,6 +29,18 @@
     padding: 0;
     flex-grow: 0;
     margin-bottom: 23px;
+  }
+
+  .extra-characteristics__title {
+    flex: 1;
+    outline: 1px solid sienna;
+    display: inline-flex;
+  }
+
+  .extra__description tr {
+    flex: 1;
+    outline: 1px solid sienna;
+    display: inline-flex;
   }
 }
 

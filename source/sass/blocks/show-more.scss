@@ -16,6 +16,7 @@
   padding-top: 53px;
   text-transform: uppercase;
   color: #111111;
+  max-width: 100%;
 
   &::before {
     content: url("../../img/icon-plus-mobile.svg");
@@ -33,6 +34,7 @@
   font-size: 12px;
   line-height: 16px;
   margin-top: 8px;
+  max-width: 100%;
 }
 
 .show-more__link-all {
@@ -42,6 +44,7 @@
   line-height: 1;
   padding-top: 12px;
   margin-top: 20px;
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {

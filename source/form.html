@@ -2,27 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <img class="header__logo-image" src="https://via.placeholder.com/33x38" alt="милый котик">
-      <img class="header__logo-title" src="https://via.placeholder.com/101x18" alt="логотип Кэт энерджи">
-      <button class="header__menu-toggle" type="button">Открыть меню</button>
-      <nav class="header__nav">
-        <ul class="header__navigation-list navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__inner">
+        <div class="header__top">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="милый котик">
+            </picture>
+          </a>
+        </div>
+        <nav class="header__nav header__nav--closed header__nav--no-js">
+          <button class="header__menu-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="header__navigation-list navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link link-color-black" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link link-color-black" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link navigation-list__link--active link-color-black link-color-black--active">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="program-selection">
@@ -30,11 +42,11 @@
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="get">
 
         <p class="form__intro">
-          Заполните анкету и мы подберем программу питания для вашего кота
+          Заполните анкету и мы подберем <br> программу питания для вашего кота
         </p>
 
-        <fieldset class="form__cat cat">
-          <legend>Данные вашего кота</legend>
+        <div class="form__cat cat">
+          <h3 class="visually-hidden">Данные вашего кота</h3>
           <label class="cat__data">Имя:<sup>*</sup>
             <input class="cat__input" type="text" name="cat-name" required placeholder="Барсик">
           </label>
@@ -46,10 +58,10 @@
           <label class="cat__data"><span>Возраст (лет):</span>
             <input class="cat__input" type="number" name="cat-age" placeholder="7">
           </label>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__programs indicate-program">
-          <legend>Укажите программу</legend>
+        <div class="form__programs indicate-program">
+          <h3>Укажите программу</h3>
           <label class="indicate-program__item">
             <input class="indicate-program__input" type="radio" name="program" value="weight-loss" checked>
             <span class="indicate-program__decor"></span>
@@ -67,10 +79,10 @@
             <span class="indicate-program__decor"></span>
             <span class="indicate-program__title">Не знаю (Нужен ваш совет)</span>
           </label>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__owner owner">
-          <legend class="owner__title">Контактные данные (владельца кота)</legend>
+        <div class="form__owner owner">
+          <h3 class="owner__title">Контактные данные (владельца кота)</h3>
 
           <label class="owner__contacts">E-mail:<sup>*</sup>
             <input class="owner__input" type="email" name="email" required placeholder="kuklachev@gmail.com">
@@ -79,17 +91,17 @@
           <label class="owner__contacts">Телефон:<sup>*</sup>
             <input class="owner__input" type="number" name="phone-number" required placeholder="8 (960) 900-60-90">
           </label>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__comment comment">
-          <legend class="comment__title">Комментарий</legend>
+        <div class="form__comment comment">
+          <h3 class="comment__title">Комментарий</h3>
           <textarea class="comment__text" placeholder="Расскажите обо всех повадках кота" cols="35" rows="8">
             Расскажите обо всех повадках кота
           </textarea>
-        </fieldset>
+        </div>
 
-        <fieldset class="form__additionally additionally">
-          <legend class="additionally__title">Дополнительно</legend>
+        <div class="form__additionally additionally">
+          <h3 class="additionally__title">Дополнительно</h3>
 
           <label class="additionally__item">
             <input class="additionally__input"  type="checkbox" name="sweetener" checked>
@@ -114,7 +126,7 @@
             <span class="additionally__decor"></span>
             <span class="additionally__product-name">Витамины</span>
           </label>
-        </fieldset>
+        </div>
 
         <button class="form__send-btn" type="submit" value="">
           Отправить заявку
@@ -148,5 +160,22 @@
       </div>
 
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.header__nav');
+      var navToggle = document.querySelector('.header__menu-toggle');
+
+      navMain.classList.remove('header__nav--no-js');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('header__nav--closed')) {
+          navMain.classList.remove('header__nav--closed');
+          navMain.classList.add('header__nav--opened');
+        } else {
+          navMain.classList.add('header__nav--closed');
+          navMain.classList.remove('header__nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -48,89 +48,107 @@
         <div class="form__cat cat">
           <h3 class="visually-hidden">Данные вашего кота</h3>
           <label class="cat__data">Имя:<sup>*</sup>
-            <input class="cat__input" type="text" name="cat-name" required placeholder="Барсик">
+            <input class="cat__input" type="text" name="cat-name" required value="Барсик">
           </label>
 
           <label class="cat__data">Вес (кг):<sup>*</sup>
-            <input class="cat__input" type="number" name="cat-weight" required placeholder="7">
+            <input class="cat__input" type="number" name="cat-weight" required value="7">
           </label>
 
-          <label class="cat__data"><span>Возраст (лет):</span>
-            <input class="cat__input" type="number" name="cat-age" placeholder="7">
+          <label class="cat__data">Возраст (лет):
+            <input class="cat__input" type="number" name="cat-age" value="7">
           </label>
         </div>
 
         <div class="form__programs indicate-program">
-          <h3>Укажите программу</h3>
+          <h3 class="visually-hidden">Укажите программу</h3>
           <label class="indicate-program__item">
-            <input class="indicate-program__input" type="radio" name="program" value="weight-loss" checked>
+            <input class="indicate-program__input visually-hidden" type="radio" name="program" value="weight-loss" checked>
             <span class="indicate-program__decor"></span>
             <span class="indicate-program__title">Похудение</span>
           </label>
 
           <label class="indicate-program__item">
-            <input class="indicate-program__input" type="radio" name="program" value="weight-gain">
+            <input class="indicate-program__input visually-hidden" type="radio" name="program" value="weight-gain">
             <span class="indicate-program__decor"></span>
             <span class="indicate-program__title">Набор массы</span>
           </label>
 
           <label class="indicate-program__item">
-            <input class="indicate-program__input" type="radio" name="program" value="ask">
+            <input class="indicate-program__input visually-hidden" type="radio" name="program" value="ask">
             <span class="indicate-program__decor"></span>
             <span class="indicate-program__title">Не знаю (Нужен ваш совет)</span>
           </label>
         </div>
 
         <div class="form__owner owner">
-          <h3 class="owner__title">Контактные данные (владельца кота)</h3>
+          <h3 class="owner__title">Контактные данные <br class="owner__word-br"> (владельца кота)</h3>
+          <div class="owner__wrapper">
+            <label class="owner__contacts">E-mail:<sup>*</sup>
+              <input class="owner__input" type="email" name="email" required value="kuklachev@gmail.com">
+              <svg class="owner__icon owner__icon--mail" width="17" height="13" viewBox="0 0 17 13" fill="#222222">
+                <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z
+                  M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"
+                />
+              </svg>
+            </label>
 
-          <label class="owner__contacts">E-mail:<sup>*</sup>
-            <input class="owner__input" type="email" name="email" required placeholder="kuklachev@gmail.com">
-          </label>
-
-          <label class="owner__contacts">Телефон:<sup>*</sup>
-            <input class="owner__input" type="number" name="phone-number" required placeholder="8 (960) 900-60-90">
-          </label>
+            <label class="owner__contacts">Телефон:<sup>*</sup>
+              <input class="owner__input" type="tel" name="phone-number" required value="8 (960) 900-60-90">
+              <svg class="owner__icon owner__icon--phone" width="20" height="20" viewBox="0 0 20 20" fill="#222222">
+                <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                <path  d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                  c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                  C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                  C7.8,20,8.1,19.7,8.1,19.4z"
+                />
+              </svg>
+            </label>
+          </div>
         </div>
 
         <div class="form__comment comment">
           <h3 class="comment__title">Комментарий</h3>
-          <textarea class="comment__text" placeholder="Расскажите обо всех повадках кота" cols="35" rows="8">
-            Расскажите обо всех повадках кота
-          </textarea>
+          <div class="comment__wrapper">
+            <textarea class="comment__text">Расскажите обо всех повадках кота</textarea>
+          </div>
         </div>
 
         <div class="form__additionally additionally">
           <h3 class="additionally__title">Дополнительно</h3>
+          <div class="additionally__inputs-block">
+            <label class="additionally__item">
+              <input class="additionally__input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="additionally__decor"></span>
+              <span class="additionally__product-name">Сахарозаменитель</span>
+            </label>
 
-          <label class="additionally__item">
-            <input class="additionally__input"  type="checkbox" name="sweetener" checked>
-            <span class="additionally__decor"></span>
-            <span class="additionally__product-name">Сахарозаменитель</span>
-          </label>
+            <label class="additionally__item">
+              <input class="additionally__input visually-hidden" type="checkbox" name="water">
+              <span class="additionally__decor">
+              </span>
+              <span class="additionally__product-name">Питьевая вода</span>
+            </label>
 
-          <label class="additionally__item">
-            <input class="additionally__input"  type="checkbox" name="sweetener" checked>
-            <span class="additionally__decor"></span>
-            <span class="additionally__product-name">Питьевая вода</span>
-          </label>
+            <label class="additionally__item">
+              <input class="additionally__input visually-hidden" type="checkbox" name="milk">
+              <span class="additionally__decor"></span>
+              <span class="additionally__product-name">Молоко</span>
+            </label>
 
-          <label class="additionally__item">
-            <input class="additionally__input"  type="checkbox" name="sweetener" checked>
-            <span class="additionally__decor"></span>
-            <span class="additionally__product-name">Молоко</span>
-          </label>
-
-          <label class="additionally__item">
-            <input class="additionally__input"  type="checkbox" name="sweetener" checked>
-            <span class="additionally__decor"></span>
-            <span class="additionally__product-name">Витамины</span>
-          </label>
+            <label class="additionally__item">
+              <input class="additionally__input visually-hidden" type="checkbox" name="vitamins">
+              <span class="additionally__decor"></span>
+              <span class="additionally__product-name">Витамины</span>
+            </label>
+          </div>
         </div>
 
-        <button class="form__send-btn" type="submit" value="">
-          Отправить заявку
-        </button>
+        <div class="form__inner">
+          <button class="form__send-btn green-btn" type="submit" value="">
+            Отправить заявку
+          </button>
+        </div>
 
         <small class="form__legend"><sup>*</sup> — Обязательные поля</small>
       </form>

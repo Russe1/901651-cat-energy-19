@@ -14,6 +14,41 @@
 
 .form__cat {
   margin: 0;
+  padding: 0 20px 10px 19px;
+}
+
+.form__programs {
+  margin: 0;
+  padding: 21px 20px 8px 20px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__owner {
+  margin: 0;
   padding: 0;
-  padding-bottom: 23px;
+}
+
+.form__comment {
+  margin: 0;
+  padding: 0;
+}
+
+.form__additionally {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 22px;
+}
+
+.form__inner {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.form__send-btn {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  border: none;
 }

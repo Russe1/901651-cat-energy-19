@@ -42,6 +42,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .additionally__input {
@@ -74,10 +78,6 @@
   border-color: #bababa;
 }
 
-.additionally__input:active + .additionally__decor {
-  opacity: 0.3;
-}
-
 .additionally__input:checked + .additionally__decor {
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
@@ -91,5 +91,42 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additionally {
+    &::before {
+      top: 87px;
+    }
+  }
+
+  .additionally__title {
+    font-size: 36px;
+    margin-left: 30px;
+    padding: 65px 42px 56px 39px;
+  }
+
+  .additionally__inputs-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+  }
+
+  .additionally__item {
+    width: 285px;
+    margin-bottom: 32px;
+  }
+
+  .additionally__input + .additionally__decor {
+    width: 40px;
+    height: 40px;
+  }
+
+  .additionally__product-name {
+    padding-left: 19px;
   }
 }

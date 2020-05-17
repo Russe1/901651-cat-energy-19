@@ -1,5 +1,6 @@
 .form {
   background-color: #ffffff;
+  font-family: "Oswald", sans-serif;
 }
 
 .form__intro {
@@ -45,10 +46,67 @@
   padding: 0;
   padding-right: 20px;
   padding-left: 20px;
+  text-align: center;
 }
 
 .form__send-btn {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   border: none;
+  cursor: pointer;
+}
+
+.form__legend {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  padding-top: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__intro {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 70px;
+    margin-bottom: 65px;
+  }
+
+  .form__cat {
+    padding: 0 67px 52px 70px;
+  }
+
+  .form__programs {
+    margin: 0;
+    padding: 0 67px 0 70px;
+    border: none;
+  }
+
+  .form__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: left;
+  }
+
+  .form__send-btn {
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .form__legend {
+    display: inline-block;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    margin-left: 61px;
+    padding-top: 16px;
+  }
 }

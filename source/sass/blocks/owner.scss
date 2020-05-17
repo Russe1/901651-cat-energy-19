@@ -99,3 +99,55 @@
 .owner__input:invalid + .owner__icon {
   fill: #ff8282;
 }
+
+@media (min-width: $tablet-width) {
+  .owner {
+    &::before {
+      top: 97px;
+    }
+  }
+
+  .owner__title {
+    font-size: 36px;
+    margin-left: 30px;
+    padding: 75px 42px 75px 39px;
+  }
+
+  .owner__word-br {
+    display: none;
+  }
+
+  .owner__wrapper {
+    padding-left: 70px;
+    padding-right: 65px;
+  }
+
+  .owner__contacts {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .owner__input {
+    margin-left: 20px;
+    min-height: 52px;
+    padding-left: 22px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .owner__input[name="phone-number"] {
+    margin-left: 15px;
+    padding-left: 18px;
+  }
+
+  .owner__icon--mail {
+    top: 20px;
+    right: 21px;
+  }
+
+  .owner__icon--phone {
+    top: 17px;
+    right: 17px;
+  }
+}

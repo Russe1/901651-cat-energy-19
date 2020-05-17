@@ -48,3 +48,30 @@
   color: #444444;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .comment {
+    &::before {
+      top: 68px;
+    }
+  }
+
+  .comment__title {
+    font-size: 36px;
+    margin: 0;
+    margin-left: 30px;
+    padding: 45px 40px 78px 39px;
+  }
+
+  .comment__wrapper {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  .comment__text {
+    min-height: 174px;
+    padding: 8px 20px 20px 18px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

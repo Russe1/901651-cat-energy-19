@@ -48,3 +48,21 @@
 .cat__input[name="cat-weight"] {
   margin-left: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .cat__data {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .cat__input {
+    margin-left: 18px;
+    min-height: 52px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .cat__input[name="cat-weight"] {
+    margin-left: 22px;
+  }
+}

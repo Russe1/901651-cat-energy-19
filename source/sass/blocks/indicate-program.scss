@@ -39,14 +39,11 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .indicate-program__input:hover + .indicate-program__decor {
   border-color: #bcbcbc;
-}
-
-.indicate-program__item:active {
-  opacity: 0.3;
 }
 
 .indicate-program__input:checked + .indicate-program__decor {
@@ -66,10 +63,15 @@
 .indicate-program__title {
   padding-left: 16px;
   cursor: pointer;
+  pointer-events: none;
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.indicate-program__item:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

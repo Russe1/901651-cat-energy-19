@@ -110,3 +110,42 @@
     padding-top: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__intro {
+    padding-left: 40px;
+    margin-bottom: 65px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    padding: 0 40px;
+  }
+
+  .form__cat {
+    padding: 0;
+  }
+
+  .form__programs {
+    padding: 0;
+    margin-left: 80px;
+  }
+
+  .form__additionally {
+    padding-bottom: 29px;
+  }
+
+  .form__inner {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form__send-btn {
+    width: 568px;
+  }
+
+  .form__legend {
+    margin-left: 82px;
+    padding-top: 16px;
+  }
+}

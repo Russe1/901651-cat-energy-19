@@ -130,3 +130,25 @@
     padding-left: 19px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additionally {
+    &::before {
+      top: 89px;
+    }
+  }
+
+  .additionally__title {
+    margin-left: 0;
+    padding: 68px 42px 56px 39px;
+  }
+
+  .additionally__inputs-block {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .additionally__item {
+    width: 246px;
+  }
+}

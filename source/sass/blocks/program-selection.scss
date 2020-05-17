@@ -37,3 +37,19 @@
     padding-bottom: 72px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    padding-top: 113px;
+  }
+
+  .program-selection__title {
+    padding: 0 40px;
+    padding-top: 75px;
+    padding-bottom: 56px;
+  }
+
+  .program-selection__form {
+    padding-bottom: 82px;
+  }
+}

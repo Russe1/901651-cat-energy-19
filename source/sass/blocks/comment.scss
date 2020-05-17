@@ -75,3 +75,21 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment {
+    &::before {
+      top: 89px;
+    }
+  }
+
+  .comment__title {
+    margin-left: 0;
+    padding: 68px 40px 75px 39px;
+  }
+
+  .comment__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

@@ -66,3 +66,9 @@
     margin-left: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cat {
+    min-width: 570px;
+  }
+}

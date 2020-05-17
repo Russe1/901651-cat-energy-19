@@ -45,41 +45,43 @@
           Заполните анкету и мы подберем <br> программу питания для вашего кота
         </p>
 
-        <div class="form__cat cat">
-          <h3 class="visually-hidden">Данные вашего кота</h3>
-          <label class="cat__data">Имя:<sup>*</sup>
-            <input class="cat__input" type="text" name="cat-name" required value="Барсик">
-          </label>
-
-          <label class="cat__data">Вес (кг):<sup>*</sup>
-            <input class="cat__input" type="number" name="cat-weight" required value="7">
-          </label>
-
-          <label class="cat__data">Возраст (лет):
-            <input class="cat__input" type="number" name="cat-age" value="7">
-          </label>
-        </div>
-
-        <div class="form__programs indicate-program">
-          <h3 class="visually-hidden">Укажите программу</h3>
-          <div class="indicate-program__wrapper">
-            <label class="indicate-program__item">
-              <input class="indicate-program__input visually-hidden" type="radio" name="program" value="weight-loss" checked>
-              <span class="indicate-program__decor"></span>
-              <span class="indicate-program__title">Похудение</span>
+        <div class="form__wrapper">
+          <div class="form__cat cat">
+            <h3 class="visually-hidden">Данные вашего кота</h3>
+            <label class="cat__data">Имя:<sup>*</sup>
+              <input class="cat__input" type="text" name="cat-name" required value="Барсик">
             </label>
 
-            <label class="indicate-program__item">
-              <input class="indicate-program__input visually-hidden" type="radio" name="program" value="weight-gain">
-              <span class="indicate-program__decor"></span>
-              <span class="indicate-program__title">Набор массы</span>
+            <label class="cat__data">Вес (кг):<sup>*</sup>
+              <input class="cat__input" type="number" name="cat-weight" required value="7">
             </label>
 
-            <label class="indicate-program__item">
-              <input class="indicate-program__input visually-hidden" type="radio" name="program" value="ask">
-              <span class="indicate-program__decor"></span>
-              <span class="indicate-program__title">Не знаю (Нужен ваш совет)</span>
+            <label class="cat__data">Возраст (лет):
+              <input class="cat__input" type="number" name="cat-age" value="7">
             </label>
+          </div>
+
+          <div class="form__programs indicate-program">
+            <h3 class="visually-hidden">Укажите программу</h3>
+            <div class="indicate-program__wrapper">
+              <label class="indicate-program__item">
+                <input class="indicate-program__input visually-hidden" type="radio" name="program" value="weight-loss" checked>
+                <span class="indicate-program__decor"></span>
+                <span class="indicate-program__title">Похудение</span>
+              </label>
+
+              <label class="indicate-program__item">
+                <input class="indicate-program__input visually-hidden" type="radio" name="program" value="weight-gain">
+                <span class="indicate-program__decor"></span>
+                <span class="indicate-program__title">Набор массы</span>
+              </label>
+
+              <label class="indicate-program__item">
+                <input class="indicate-program__input visually-hidden" type="radio" name="program" value="ask">
+                <span class="indicate-program__decor"></span>
+                <span class="indicate-program__title">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </div>
           </div>
         </div>
 

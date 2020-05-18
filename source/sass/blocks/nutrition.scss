@@ -39,6 +39,7 @@
 
   .nutrition__link {
     max-width: 100%;
+    margin-bottom: 39px;
   }
 
   .nutrition__image {
@@ -57,12 +58,17 @@
     margin-top: -82px;
   }
 
+  .nutrition__wrapper {
+    flex-grow: 0;
+  }
+
   .nutrition__description {
-    margin-top: 35px;
+    margin: 0;
   }
 
   .nutrition__to-buy {
-    margin-top: 34px;
+    margin: 0;
+    margin-top: auto;
   }
 }
 

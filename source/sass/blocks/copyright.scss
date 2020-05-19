@@ -9,7 +9,6 @@
   font-size: 16px;
   line-height: 1;
   color: #444444;
-  margin-top: -6px;
 }
 
 .copyright__logo {
@@ -23,13 +22,13 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-
     justify-content: flex-end;
   }
 
   .copyright__autor {
     margin-top: 0;
     margin-right: 23px;
+
     &:active {
       opacity: 0.3;
     }
@@ -37,7 +36,7 @@
 
   .copyright__logo {
     &:hover {
-    color: #68b738;
+      color: #68b738;
     }
 
     &:active {

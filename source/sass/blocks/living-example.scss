@@ -117,8 +117,8 @@
 
   .living-example__title {
     margin-top: 0;
-    margin-bottom: 146px;
     padding-top: 82px;
+    margin-bottom: 81px;
   }
 
   .living-example__values {
@@ -143,6 +143,8 @@
   }
 
   .living-example__slider {
+    min-height: auto;
     margin-left: auto;
+    padding: 0;
   }
 }

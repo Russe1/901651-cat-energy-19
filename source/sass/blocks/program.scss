@@ -100,9 +100,7 @@
       right: 0;
       top: 1px;
     }
-  }
 
-  .program__link {
     &:hover {
       padding-right: 56px;
 
@@ -116,8 +114,6 @@
       opacity: 0.3;
     }
   }
-
-
 }
 
 @media (min-width: $desktop-width) {

@@ -1,0 +1,69 @@
+.nutrion-characteristics {
+  font-size: 12px;
+  line-height: 16px;
+  border-collapse: collapse;
+}
+
+.nutrion-characteristics__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-right: 66px;
+  padding-bottom: 12px;
+}
+
+.nutrion-characteristics__title a {
+  color: #111111;
+}
+
+.nutrion-characteristics__mark {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.nutrion-characteristics__value {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrion-characteristics {
+    font-size: 16px;
+  }
+
+  .nutrion-characteristics__title {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 50px;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+
+  .nutrion-characteristics tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .nutrion-characteristics__mark {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .nutrion-characteristics__value {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrion-characteristics__title {
+    padding: 0 10px;
+    padding-bottom: 18px;
+  }
+}

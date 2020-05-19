@@ -19,22 +19,28 @@ a {
 }
 
 html {
-  box-sizing: border-box;
+
   background-color: #333333;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   min-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
   background: white;
+}
+
+iframe {
+  display: block;
+  width: 100%;
 }
 
 @import "blocks/variables.scss";
@@ -58,11 +64,24 @@ body {
 @import "blocks/socials-list.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/copyright.scss";
-
-@media (min-width: $tablet-width) {
-  body {
-    width: $tablet-width;
-  }
-}
-
+@import "blocks/catalog.scss";
+@import "blocks/food-list.scss";
+@import "blocks/nutrition.scss";
+@import "blocks/nutrion-characteristics.scss";
+@import "blocks/show-more.scss";
+@import "blocks/gray-btn.scss";
+@import "blocks/additional-goods.scss";
+@import "blocks/related-products.scss";
+@import "blocks/extra.scss";
+@import "blocks/extra-characteristics.scss";
+@import "blocks/stocks-and-sales.scss";
+@import "blocks/gift.scss";
+@import "blocks/link-color-black.scss";
+@import "blocks/program-selection.scss";
+@import "blocks/form.scss";
+@import "blocks/cat.scss";
+@import "blocks/indicate-program.scss";
+@import "blocks/owner.scss";
+@import "blocks/comment.scss";
+@import "blocks/additionally.scss";
 /* это для бонусного задания */

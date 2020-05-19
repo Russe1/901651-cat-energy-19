@@ -1,0 +1,22 @@
+.stocks-and-sales {
+  margin: 0;
+  padding: 39px 20px 35px 20px;
+}
+
+.stocks-and-sales__element {
+  margin: 0;
+  padding: 0;
+  background-color: #74b84b;
+}
+
+@media (min-width: $tablet-width) {
+  .stocks-and-sales {
+    padding: 69px 30px 76px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stocks-and-sales {
+    padding: 0 40px;
+  }
+}

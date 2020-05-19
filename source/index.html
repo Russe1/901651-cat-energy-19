@@ -10,8 +10,11 @@
     <header class="header">
       <div class="header__inner">
         <div class="header__top">
-          <img class="header__logo-image" src="https://via.placeholder.com/33x38" alt="милый котик">
-          <img class="header__logo-title" src="https://via.placeholder.com/101x18" alt="логотип Кэт энерджи">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="милый котик">
+            </picture>
         </div>
         <nav class="header__nav header__nav--closed header__nav--no-js">
           <button class="header__menu-toggle" type="button">
@@ -34,13 +37,20 @@
 
     <main>
       <section class="intro">
-        <div class="intro__description">
-          <h1 class="intro__title">Функциональное питание для котов</h1>
-          <p class="intro__slogan">Занялся собой? Займись котом!</p>
-        </div>
-        <div class="intro__inner">
-          <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Упаковка питания для котов">
-          <a class="intro__link green-btn-main" href="form.html">Подобрать программу</a>
+        <div class="intro__wrapper">
+          <div class="intro__description">
+            <h1 class="intro__title">Функциональное питание для котов</h1>
+            <p class="intro__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="intro__inner">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, index-background-desktop@2x.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg">
+              <img class="intro__image" src="img/index-can-mobile@1x.png"
+              srcset="img/index-can-mobile@2x.png" width="280" height="270" alt="Упаковка питания для котов">
+            </picture>
+            <a class="intro__link green-btn-main" href="form.html">Подобрать программу</a>
+          </div>
         </div>
       </section>
 
@@ -49,11 +59,9 @@
           <li class="programs-list__item program">
             <h3 class="program__title">Похудение</h3>
             <div class="program__img image-block">
-              <img class="image-block__img image-block__img--weigth-loss" src="https://via.placeholder.com/50x51" width="35" height="49" alt="изображение стройного кота">
+                <img class="image-block__img image-block__img--weigth-loss" src="img/icon-cat-slim.svg" width="35" height="49" alt="изображение стройного кота">
             </div>
-<!--             <span class="program__image-inner"></span>
-            <img class="program__image program__image--weigth-loss" src="https://via.placeholder.com/50x51" width="35" height="49" alt="изображение стройного кота">
- -->            <p class="program__slogan program__slogan--weigth-loss">
+            <p class="program__slogan program__slogan--weigth-loss">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
@@ -62,8 +70,9 @@
 
           <li class="programs-list__item program">
             <h3 class="program__title">Набор массы</h3>
-            <span class="program__image-inner"></span>
-            <img class="program__image program__image--weigth-gain" src="https://via.placeholder.com/50x51" width="67" height="28" alt="изображение мощного кота">
+            <div class="program__img image-block">
+                <img class="image-block__img image-block__img--weigth-gain" src="img/icon-cat-pro.svg" width="67" height="28" alt="изображение мощного кота">
+            </div>
             <p class="program__slogan program__slogan--weigth-gain">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -79,8 +88,8 @@
           <ul class="programs-description__list advantages-list">
             <li class="advantages-list__item advantage">
               <div class="advantage__image-inner">
-                <img class="advantage__image" src="https://via.placeholder.com/60x60" width="26" height="29" alt="экологичное питание">
-              </div>
+                <img class="advantage__image" src="img/advantage-leaf@1x.png"
+                srcset="img/advantage-leaf@2x.png" width="50" height="50" alt="экологичное питание">              </div>
               <p class="advantage__text">
                 Функциональное питание содержит только полезные питательные вещества.
               </p>
@@ -88,7 +97,8 @@
 
             <li class="advantages-list__item advantage">
               <div class="advantage__image-inner">
-                <img class="advantage__image" src="https://via.placeholder.com/60x60" width="29" height="31" alt="удобство приготовления">
+                <img class="advantage__image" src="img/advantage-powder@1x.png"
+                srcset="img/advantage-powder@2x.png" width="50" height="50" alt="удобство приготовления">
               </div>
               <p class="advantage__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
@@ -97,7 +107,8 @@
 
             <li class="advantages-list__item advantage">
               <div class="advantage__image-inner">
-                <img class="advantage__image" src="https://via.placeholder.com/60x60" width="23" height="30" alt="внедрение в рацион питания">
+                <img class="advantage__image" src="img/advantage-dining@1x.png"
+                srcset="img/advantage-dining@2x.png" width="50" height="50" alt="внедрение в рацион питания">
               </div>
               <p class="advantage__text">
                 Замените один-два приема обычной еды на наше функциональное питание.
@@ -106,7 +117,8 @@
 
             <li class="advantages-list__item advantage">
               <div class="advantage__image-inner">
-                <img class="advantage__image" src="https://via.placeholder.com/60x60" width="26" height="31" alt="быстрый результат">
+                <img class="advantage__image" src="img/advantage-clock@1x.png"
+                srcset="img/advantage-clock@2x.png" width="50" height="50" alt="быстрый результат">
               </div>
               <p class="advantage__text">
                 Уже через месяц наслаждайтесь изменениями к <span class="advantage__word-br" >лучшему</span>  вашего питомца!
@@ -117,43 +129,59 @@
       </section>
 
       <section class="living-example">
-        <div class="living-example__inner">
-          <h2 class="living-example__title">Живой пример</h2>
+        <div class="living-example__wrapper">
+          <div class="living-example__inner">
+            <h2 class="living-example__title">Живой пример</h2>
 
-          <p class="living-example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
+            <p class="living-example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+              Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
 
-          <div class="living-example__values">
-            <div class="living-example__numbers data">
-              <div class="data__block">
-                <span class="data__value">5 кг</span>
-                <span class="data__legend data__legend--first">снижение  веса</span>
+            <div class="living-example__values">
+              <div class="living-example__numbers data">
+                <div class="data__block">
+                  <span class="data__value">5 кг</span>
+                  <span class="data__legend data__legend--first">снижение  веса</span>
+                </div>
+
+                <div class="data__block">
+                  <span class="data__value">60 дней</span>
+                  <span class="data__legend data__legend--second">затрачено  времени</span>
+                </div>
               </div>
 
-              <div class="data__block">
-                <span class="data__value">60 дней</span>
-                <span class="data__legend data__legend--second">затрачено  времени</span>
-              </div>
+              <p class="living-example__expenses">Затраты на питание: <span class="living-example__word-br">15 000 руб.</span> </p>
             </div>
-
-            <p class="living-example__expenses">Затраты на питание: 15 000 руб.</p>
           </div>
-        </div>
 
-        <div class="living-example__slider slider">
-          <div class="slider__photo-block">
-            <img class="slider__image" src="https://via.placeholder.com/311x232" width="311" height="232" alt="фотография полного кота">
-<!--               <img class="slider__image" src="https://via.placeholder.com/251x240" alt="фотография худого кота">
--->            </div>
-          <div class="slider__toggles-block">
-            <button class="slider__button" type="button">Было</button>
-            <div class="slider__switch">
-              <div class="slider__toggle"></div>
+          <div class="living-example__slider slider">
+            <div class="slider__photo-block">
+              <div class="slider__photo slider__photo--first">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png">
+                  <img class="slider__image slider__image--before" src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png" width="320" height="240" alt="фотография полного кота">
+                </picture>
+              </div>
+              <div class="slider__photo slider__photo--second">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png">
+                    <img class="slider__image slider__image--after" src="img/after-mobile@1x.png"
+                    srcset="img/after-mobile@2x.png" width="320" height="240" alt="фотография худого кота">
+                </picture>
+              </div>
             </div>
-            <button class="slider__button" type="button">Стало</button>
+            <div class="slider__toggles-block">
+              <button class="slider__button" type="button">Было</button>
+              <div class="slider__switch">
+                <div class="slider__toggle"></div>
+              </div>
+              <button class="slider__button" type="button">Стало</button>
+            </div>
           </div>
         </div>
 
@@ -167,7 +195,11 @@
             <span class="contacts__word-br">Санкт-Петербург</span>
           </p>
         </div>
-        <img class="contacts__map" src="https://via.placeholder.com/320x363" width="320" height="363" alt="наш адрес: ул. Большая Конюшенная, д. 19/8">
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858715717414!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587235903355!5m2!1sru!2sru"
+            width="100%" height="100%" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0">
+          </iframe>
+        </div>
       </section>
 
     </main>
@@ -175,13 +207,13 @@
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__logo">
-          <img class="footer__logo-image" src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи">
+          <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="логотип Кэт энерджи">
         </div>
         <ul class="footer__socials socials-list">
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg class="socials-list__icon" width="22" heigth="12" viewBox="0 0 22 12">
+              <svg class="socials-list__icon socials-list__icon--vkontakte" width="22" height="12" viewBox="0 0 22 12">
                 <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
                   c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
                   s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
@@ -194,7 +226,7 @@
                   c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1V3.9V2.6c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1H10
                   c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
                   C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
-                  c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"
+                  c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" fill="currentColor"
                 />
               </svg>
             </a>
@@ -202,14 +234,14 @@
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visually-hidden">Интаграмм</span>
-              <svg class="socials-list__icon" width="16" heigth="16" viewBox="0 0 16 16">
+              <svg class="socials-list__icon socials-list__icon--insta" width="16" height="16" viewBox="0 0 16 16">
                 <path d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-                  M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"
+                  M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" fill="currentColor"
                 />
                 <path d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-                  s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"
+                  s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" fill="currentColor"
                 />
-                <circle cx="12.3" cy="3.7" r="0.9"/>
+                <circle cx="12.3" cy="3.7" r="0.9" fill="currentColor"/>
               </svg>
             </a>
           </li>
@@ -217,10 +249,10 @@
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visually-hidden">Фэйсбук</span>
-              <svg class="socials-list__icon" width="10" heigth="19" viewBox="0 0 10 19">
+              <svg class="socials-list__icon socials-list__icon--facebook" width="10" height="19" viewBox="0 0 10 19">
                 <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
                   h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
-                  z"
+                  z" fill="currentColor"
                 />
               </svg>
             </a>
@@ -230,7 +262,14 @@
         <div class="footer__copyright copyright">
           <a class="copyright__autor" href="#">HTML Academy</a>
           <a class="copyright__logo" href="#">
-            <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="логотип HTML Academy">
+            <span class="visually-hidden">логотип HTML Academy</span>
+            <svg width="27" height="34" viewBox="0 0 27 34">
+              <path d="M13.6,0h-0.1L0,1.5v24.6l13.5,8l13.5-8V1.5C27,1.5,13.6,0,13.6,0z M25.3,25L13.5,32L1.7,25V15l11.7,6.9v1.2
+                l-8-4.8v1.2l8.1,4.8v1.3L5.4,21v1.2l8.1,4.8l8.2-4.8V17l3.6-2.2V25z M25.2,13.5L22,15.4l-1.5,0.9l-7.1-4.1v1.2l6,3.6h-0.1L19.3,17
+                l-0.9,0.5l-5-2.9v1.2l4,2.3l-1,0.6L13.4,17v1.2l2,1.2l-2,1.2L1.8,13.6l11.6-6.9C13.4,6.7,25.2,13.5,25.2,13.5z M25.3,12.3L13.4,5.3
+                L1.7,12.3V3l11.8-1.2L25.3,3C25.3,3,25.3,12.3,25.3,12.3z" fill="currentColor"
+              />
+            </svg>
           </a>
         </div>
       </div>
@@ -252,6 +291,7 @@
         }
       });
     </script>
+    <script src="js/picturefill.js"></script>
 
   </body>
 </html>

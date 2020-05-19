@@ -31,7 +31,21 @@
   margin-top: 25px;
 }
 
+.living-example__expenses {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 10px;
+  margin-top: 34px;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .living-example__slider {
+  padding: 0;
+  margin: 0;
   padding-bottom: 35px;
 }
 
@@ -47,8 +61,8 @@
   .living-example__title {
     padding: 0;
     font-size: 60px;
-    margin-top: 42px;
-    margin-bottom: 65px;
+    padding-top: 42px;
+    padding-bottom: 65px;
   }
 
   .living-example__text {
@@ -67,8 +81,70 @@
     margin-top: 53px;
   }
 
+  .living-example__expenses {
+    display: inline-block;
+    width: 175px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    text-align: right;
+  }
+
   .living-example__slider {
-    margin-top: 255px;
+    min-height: 717px;
     padding-bottom: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living-example {
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 217px, transparent 217px, transparent 462px), linear-gradient(to right, #f2f2f2 0%, #f2f2f2 74.9%, #eaeaea 74.9%, #eaeaea 100%);
+  }
+
+  .living-example__wrapper {
+    display: flex;
+    padding: 0 40px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+  }
+
+  .living-example__inner {
+    width: 445px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .living-example__title {
+    margin-top: 0;
+    padding-top: 82px;
+    margin-bottom: 81px;
+  }
+
+  .living-example__values {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .living-example__numbers {
+    margin-top: 67px;
+    margin-bottom: 57px;
+  }
+
+  .living-example__expenses {
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .living-example__word-br {
+    padding-left: 60px;
+  }
+
+  .living-example__slider {
+    min-height: auto;
+    margin-left: auto;
+    padding: 0;
   }
 }

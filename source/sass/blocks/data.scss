@@ -35,18 +35,6 @@
   padding: 0 10px;
 }
 
-.living-example__expenses {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0 10px;
-  margin-top: 34px;
-  margin-bottom: 42px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 @media (min-width: $tablet-width) {
   .data {
     display: inline-flex;
@@ -78,14 +66,10 @@
     font-size: 30px;
     line-height: 1;
   }
+}
 
-  .living-example__expenses {
-    display: inline-block;
-    width: 175px;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 5px;
-    text-align: right;
+@media (min-width: $desktop-width) {
+  .data__legend {
+    background-color: #f2f2f2;
   }
 }

@@ -1,0 +1,17 @@
+.gray-btn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #b9b9b9;
+  }
+}

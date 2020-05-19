@@ -21,7 +21,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,5 +41,23 @@
   .programs-description__list {
     margin-top: 72px;
     padding-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs-description {
+    border-bottom: none;
+  }
+
+  .programs-description__inner {
+    padding: 0 40px;
+  }
+
+  .programs-description__title {
+    margin-top: 0;
+  }
+
+  .programs-description__list {
+    padding-bottom: 0;
   }
 }

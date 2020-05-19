@@ -1,0 +1,28 @@
+.food-list {
+  list-style: none;
+}
+
+.food-list__item {
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .food-list__item {
+    width: 324px;
+    min-height: 432px;
+    margin-top: 140px;
+    padding: 0 38px;
+    padding-bottom: 40px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-list__item {
+    width: 245px;
+    margin-top: 142px;
+  }
+}

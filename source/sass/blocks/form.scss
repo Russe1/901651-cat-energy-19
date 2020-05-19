@@ -1,0 +1,151 @@
+.form {
+  background-color: #ffffff;
+  font-family: "Oswald", sans-serif;
+}
+
+.form__intro {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.form__cat {
+  margin: 0;
+  padding: 0 20px 10px 19px;
+}
+
+.form__programs {
+  margin: 0;
+  padding: 21px 20px 8px 20px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__owner {
+  margin: 0;
+  padding: 0;
+}
+
+.form__comment {
+  margin: 0;
+  padding: 0;
+}
+
+.form__additionally {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 22px;
+}
+
+.form__inner {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.form__send-btn {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.form__legend {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  padding-top: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__intro {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 70px;
+    margin-bottom: 65px;
+  }
+
+  .form__cat {
+    padding: 0 67px 52px 70px;
+  }
+
+  .form__programs {
+    margin: 0;
+    padding: 0 67px 0 70px;
+    border: none;
+  }
+
+  .form__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: left;
+  }
+
+  .form__send-btn {
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .form__legend {
+    display: inline-block;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    margin-left: 61px;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__intro {
+    padding-left: 40px;
+    margin-bottom: 65px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    padding: 0 40px;
+  }
+
+  .form__cat {
+    padding: 0;
+  }
+
+  .form__programs {
+    padding: 0;
+    margin-left: 80px;
+  }
+
+  .form__additionally {
+    padding-bottom: 29px;
+  }
+
+  .form__inner {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form__send-btn {
+    width: 568px;
+  }
+
+  .form__legend {
+    margin-left: 82px;
+    padding-top: 16px;
+  }
+}

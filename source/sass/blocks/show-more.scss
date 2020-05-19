@@ -1,0 +1,92 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.show-more__link {
+  display: block;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 53px;
+  text-transform: uppercase;
+  color: #111111;
+  max-width: 100%;
+
+  &::before {
+    content: url("../../img/icon-plus-mobile.svg");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+    opacity: 0.2;
+  }
+}
+
+.show-more__legend {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 8px;
+  max-width: 100%;
+}
+
+.show-more__link-all {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 12px;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    border: 1px solid #e6e6e6;
+    padding: 0 38px;
+    padding-bottom: 40px;
+  }
+
+  .show-more__link {
+    font-size: 20px;
+    margin-top: 55px;
+    padding: 0 50px;
+    padding-top: 107px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      left: calc(50% - 30px);
+    }
+  }
+
+  .show-more__legend {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 25px;
+    padding: 0 30px;
+  }
+
+  .show-more__link-all {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__link {
+    padding: 0 5px;
+    padding-top: 107px;
+  }
+
+  .show-more__legend {
+    margin-top: 27px;
+    padding: 0;
+  }
+}

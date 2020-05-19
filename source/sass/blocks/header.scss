@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding: 0 20px;
   min-height: 65px;
+  flex: 1;
 }
 
 .header__logo-image {
@@ -26,8 +27,8 @@
   .header__menu-toggle {
     position: absolute;
     top: 23px;
-    right: 22px;
-    width: 18px;
+    right: 20px;
+    width: 24px;
     height: 18px;
     border: none;
     cursor: pointer;
@@ -72,6 +73,7 @@
     padding: 0 30px;
     display: flex;
     padding-top: 24px;
+    flex: 1;
   }
 
   .header__top {
@@ -102,5 +104,32 @@
     margin-left: auto;
     flex-grow: 1;
     max-width: 530px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    z-index: 5;
+    background-color: transparent;
+  }
+
+  .header__inner {
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-top: 54px;
+  }
+
+  .header__nav {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }

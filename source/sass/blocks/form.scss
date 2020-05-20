@@ -113,11 +113,15 @@
 
 @media (min-width: $desktop-width) {
   .form__intro {
+    width: $desktop-width;
+    margin: 0 auto;
     padding-left: 40px;
     margin-bottom: 65px;
   }
 
   .form__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
     display: flex;
     padding: 0 40px;
   }
@@ -136,6 +140,8 @@
   }
 
   .form__inner {
+    width: $desktop-width;
+    margin: 0 auto;
     padding-right: 40px;
     padding-left: 40px;
   }

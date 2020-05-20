@@ -24,7 +24,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .living-example__numbers {
@@ -103,6 +103,7 @@
   }
 
   .living-example__wrapper {
+    width: $desktop-width;
     display: flex;
     padding: 0 40px;
     margin: 0 auto;

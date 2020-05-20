@@ -83,6 +83,11 @@
     }
   }
 
+  .comment__inner {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
   .comment__title {
     margin-left: 0;
     padding: 68px 40px 75px 39px;

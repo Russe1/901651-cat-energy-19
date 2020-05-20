@@ -112,7 +112,6 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    position: relative;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -128,6 +127,7 @@
   }
 
   .intro__wrapper {
+    position: relative;
     width: $desktop-width;
     margin: 0 auto;
     padding: 0;
@@ -150,7 +150,7 @@
     padding: 0;
     position: absolute;
     top: 142px;
-    left: 37.5%;
+    left: 490px;
     width: 552px;
     height: 499px;
   }

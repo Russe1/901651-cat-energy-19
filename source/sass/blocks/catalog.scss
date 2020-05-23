@@ -4,7 +4,7 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
@@ -43,11 +43,6 @@
   .catalog {
     width: 100%;
     padding-top: 113px;
-  }
-
-  .additional-goods__inner {
-    width: $desktop-width;
-    margin: 0 auto;
   }
 
   .catalog__wrapper {

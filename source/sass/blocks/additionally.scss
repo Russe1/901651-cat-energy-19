@@ -1,5 +1,5 @@
 .additionally {
-  font-family: "Oswald", sans-serif;
+  font-family: $font;
   position: relative;
   background-color: transparent;
   z-index: 1;
@@ -79,7 +79,7 @@
 }
 
 .additionally__input:checked + .additionally__decor {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 21px 16px;
   background-position: center;

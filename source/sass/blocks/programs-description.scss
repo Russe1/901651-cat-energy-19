@@ -17,7 +17,7 @@
 .programs-description__title {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: $font;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -39,8 +39,9 @@
   }
 
   .programs-description__list {
-    margin-top: 72px;
-    padding-bottom: 58px;
+    margin-top: 0;
+    padding-right: 79px;
+    padding-bottom: 41px;
   }
 }
 

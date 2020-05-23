@@ -12,19 +12,13 @@
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     counter-reset: li;
   }
 
   .advantages-list__item {
-    margin: 0;
-
-    &:nth-child(n+3) {
-      margin-top: 89px;
-    }
-
-    &:nth-child(2n-1) {
-      margin-right: 139px;
-    }
+    margin-top: 72px;
+    margin-bottom: 17px;
   }
 }
 

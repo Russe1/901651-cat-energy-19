@@ -8,7 +8,7 @@
   padding: 0;
   padding-top: 17px;
   padding-left: 72px;
-  font-family: "Oswald", sans-serif;
+  font-family: $font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -18,8 +18,13 @@
 
 .program__img {
   position: absolute;
-  top: 25px;
-  left: 22px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .program__img {
+    top: 25px;
+    left: 22px;
+  }
 }
 
 .program__slogan {
@@ -34,7 +39,7 @@
 }
 
 .program__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $font;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
@@ -45,7 +50,7 @@
   color: #111111;
 
   &::after {
-    content: url("../../img/icon-right-arrow-long.svg");
+    content: url("../img/icon-right-arrow-long.svg");
     position: absolute;
     width: 24px;
     height: 11px;
@@ -57,7 +62,7 @@
 @media (min-width: $tablet-width) {
   .program__title {
     padding: 0;
-    font-family: "Oswald", sans-serif;
+    font-family: $font;
     font-weight: 400;
     font-size: 36px;
     line-height: 1;
@@ -67,7 +72,7 @@
 
   .program__img {
     top: 90px;
-    left: 448px;
+    right: 60px;
   }
 
   .program__slogan {
@@ -93,7 +98,7 @@
     padding-right: 47px;
 
     &::after {
-      content: url("../../img/icon-right-arrow-long.svg");
+      content: url("../img/icon-right-arrow-long.svg");
       position: absolute;
       width: 24px;
       height: 11px;
@@ -105,7 +110,7 @@
       padding-right: 56px;
 
       &::after {
-        content: url("../../img/icon-right-arrow-verylong.svg");
+        content: url("../img/icon-right-arrow-verylong.svg");
         width: 33px;
       }
     }

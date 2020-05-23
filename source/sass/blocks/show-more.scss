@@ -9,7 +9,7 @@
 .show-more__link {
   display: block;
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: $font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -19,7 +19,7 @@
   max-width: 100%;
 
   &::before {
-    content: url("../../img/icon-plus-mobile.svg");
+    content: url("../img/icon-plus-mobile.svg");
     width: 30px;
     height: 30px;
     position: absolute;
@@ -38,7 +38,7 @@
 }
 
 .show-more__link-all {
-  font-family: "Oswald", sans-serif;
+  font-family: $font;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;

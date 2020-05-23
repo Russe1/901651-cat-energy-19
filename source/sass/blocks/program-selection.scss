@@ -40,6 +40,8 @@
 
 @media (min-width: $desktop-width) {
   .program-selection__title {
+    width: $desktop-width;
+    margin: 0 auto;
     padding: 0 40px;
     padding-top: 188px;
     padding-bottom: 56px;

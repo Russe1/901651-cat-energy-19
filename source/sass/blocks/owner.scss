@@ -52,6 +52,7 @@
   margin: 0;
   padding: 0;
   margin-left: 11px;
+  width: 120px;
   flex-grow: 1;
   min-height: 45px;
   vertical-align: middle;
@@ -157,6 +158,11 @@
     &::before {
       top: 72px;
     }
+  }
+
+  .owner__inner {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 
   .owner__title {

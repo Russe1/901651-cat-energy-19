@@ -23,23 +23,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages-list {
-    justify-content: space-between;
-  }
-
   .advantages-list__item {
-    margin: 0;
-
-    &:nth-child(n+3) {
-      margin-top: 0;
-    }
-
-    &:nth-child(2n-1) {
-      margin-right: 0;
-    }
-
-    &:nth-child(n+5) {
-      margin-top: 20px;
-    }
+    margin-bottom: 0;
   }
 }

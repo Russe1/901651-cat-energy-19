@@ -29,6 +29,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  pointer-events: none;
 }
 
 
@@ -44,6 +45,14 @@
 
 .indicate-program__input:hover + .indicate-program__decor {
   border-color: #bcbcbc;
+}
+
+.indicate-program__input:focus + .indicate-program__decor {
+  border: 1px solid green;
+}
+
+.indicate-program__input:focus ~ .indicate-program__title {
+  text-decoration: underline solid green;
 }
 
 .indicate-program__input:checked + .indicate-program__decor {

@@ -78,12 +78,29 @@
   border-color: #bababa;
 }
 
+.additionally__input:focus + .additionally__decor {
+  outline: 2px solid green;
+}
+
+.additionally__input:focus:active + .additionally__decor {
+  opacity: 0.3;
+}
+
+.additionally__input:focus:active ~ .additionally__product-name {
+  opacity: 0.3;
+}
+
 .additionally__input:checked + .additionally__decor {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 21px 16px;
   background-position: center;
 }
+
+.additionally__input:checked:focus ~ .additionally__product-name {
+  text-decoration: underline solid green;
+}
+
 
 .additionally__product-name {
   padding-left: 16px;

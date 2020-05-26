@@ -38,12 +38,18 @@
     border-color: #cdcdcd;
   }
 
-  &:focus {
-    outline: 2px solid #444444;
+  &:invalid {
+    outline: none;
+    border: 2px solid #ff8282;
   }
 
-  &:invalid {
-    border: 2px solid #ff8282;
+  &:invalid:focus {
+    border: 2px solid transparent;
+    outline: 2px solid #ff8282;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
   }
 }
 
